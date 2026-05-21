@@ -46,6 +46,7 @@ safe-outputs:
   push-to-pull-request-branch:
     target: "*"
     labels: [translation, automated-pr]
+    protected-files: allowed
     allowed-files:
       - "translations/**/*.md"
     if-no-changes: "ignore"
@@ -135,10 +136,10 @@ Emit each safe output type at most once:
 
 - At most one `push_to_pull_request_branch`.
 - At most one `update_pull_request`.
-- At most one `add_labels`.
+- At most one `add_labels`, and only when the `translation-polished` label is not already present on the pull request.
 - At most one `add_comment`.
 
-Do not emit duplicate label or comment requests. If a label is already present, do not emit an `add_labels` request for it. If you need to report both a quality summary and polishing summary, combine them into the single allowed pull request comment.
+Do not emit duplicate label or comment requests. If a label is already present, do not emit an `add_labels` request for it. If you emit `add_labels`, include the target pull request number as `item_number`. If you need to report both a quality summary and polishing summary, combine them into the single allowed pull request comment.
 
 ## Quality checklist
 
@@ -232,6 +233,8 @@ The body must include exactly one managed block and exactly one section inside t
 ```
 
 If an older unmarked `## Translation Quality Review` section already exists, replace it with the marked block. Do not append duplicates. Do not change the marker casing. Do not place generated workflow footers, integrity notes, or unrelated comments inside the managed block.
+
+Do not use any other marker names or casing. In particular, never use `TRANSLATION-REVIEW-START`, `TRANSLATION-REVIEW-END`, `TRANSLATION-QUALITY-REVIEW-START`, or uppercase marker variants.
 
 Use this format:
 
