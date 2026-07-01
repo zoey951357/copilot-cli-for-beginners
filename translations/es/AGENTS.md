@@ -7,7 +7,7 @@ Beginner-friendly course teaching GitHub Copilot CLI. Educational content, not s
 | Path | Propósito |
 |------|---------|
 | `00-07/` | Capítulos: analogía → conceptos → práctica → tarea → siguiente |
-| `samples/book-app-project/` | **Ejemplo principal**: Python CLI book collection app used throughout all chapters |
+| `samples/book-app-project/` | **Ejemplo principal**: Aplicación Python CLI de colección de libros usada en todos los capítulos |
 | `samples/book-app-project-cs/` | Versión C# de la aplicación de colección de libros |
 | `samples/book-app-project-js/` | Versión JavaScript de la aplicación de colección de libros |
 | `samples/book-app-buggy/` | **Errores intencionales** para ejercicios de depuración (Cap. 03) |
@@ -23,7 +23,7 @@ Beginner-friendly course teaching GitHub Copilot CLI. Educational content, not s
 - Mantén las explicaciones amigables para principiantes; explica la jerga de IA/ML cuando se use
 - Asegúrate de que los ejemplos de bash estén listos para copiar y pegar
 - Tono: amistoso, alentador, práctico
-- Usa `samples/book-app-project/` paths in all primary examples
+- Usa las rutas de `samples/book-app-project/` en todos los ejemplos principales
 - Usa el contexto de Python/pytest para los ejemplos de código
 
 ## No hacer

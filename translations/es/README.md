@@ -54,9 +54,9 @@ Antes de empezar, asegúrate de tener:
 
 GitHub Copilot ha evolucionado a una familia de herramientas impulsadas por IA. Aquí está dónde vive cada una:
 
-| Product | Where It Runs | Description |
+| Producto | Dónde se ejecuta | Descripción |
 |---------|---------------|----------|
-| [**GitHub Copilot CLI**](https://docs.github.com/copilot/how-tos/copilot-cli/cli-getting-started)<br>(this course) | Your terminal |  Asistente de codificación con IA nativo del terminal  |
+| [**GitHub Copilot CLI**](https://docs.github.com/copilot/how-tos/copilot-cli/cli-getting-started)<br>(este curso) | Tu terminal |  Asistente de codificación con IA nativo del terminal  |
 | [**GitHub Copilot**](https://docs.github.com/copilot) | VS Code, Visual Studio, JetBrains, etc. | Modo agente, chat, sugerencias en línea  |
 | [**Copilot on GitHub.com**](https://github.com/copilot) | GitHub | Chat inmersivo sobre tus repositorios, crea agents y más |
 | [**GitHub Copilot cloud agent**](https://docs.github.com/copilot/using-github-copilot/using-copilot-coding-agent-to-work-on-tasks) | GitHub  | Asigna issues a agents, recibe PRs de vuelta |

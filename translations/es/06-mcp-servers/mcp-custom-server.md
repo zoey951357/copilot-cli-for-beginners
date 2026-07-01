@@ -9,7 +9,7 @@ weight: 61
 ---
 -->
 
-# Building a Custom MCP Server
+# Creación de un servidor MCP personalizado
 
 > ⚠️ **Este contenido es completamente opcional.** Puedes ser muy productivo con Copilot CLI usando solo los servidores MCP preconstruidos (GitHub, filesystem, Context7). Esta guía es para desarrolladores que quieran conectar Copilot a APIs internas personalizadas. Consulta el [curso MCP para principiantes](https://github.com/microsoft/mcp-for-beginners) para más detalles.
 >
@@ -24,7 +24,7 @@ weight: 61
 
 ¿Quieres conectar Copilot a tus propias API? Aquí tienes cómo construir un servidor MCP sencillo en Python que busca información de libros, conectando con el proyecto de la aplicación de libros que has estado usando a lo largo de este curso.
 
-## Project Setup
+## Configuración del proyecto
 
 ```bash
 mkdir book-lookup-mcp-server
@@ -34,7 +34,7 @@ pip install mcp
 
 > 💡 **¿Qué es el paquete `mcp`?** Es el SDK oficial de Python para construir servidores MCP. Gestiona los detalles del protocolo para que puedas centrarte en tus herramientas.
 
-## Server Implementation
+## Implementación del servidor
 
 Crea un archivo llamado `server.py`:
 
@@ -107,9 +107,9 @@ if __name__ == "__main__":
     mcp.run()
 ```
 
-**What’s happening here:**
+**Lo que ocurre aquí:**
 
-| Part | What It Does |
+| Parte | Qué hace |
 |------|-------------|
 | `FastMCP("book-lookup")` | Crea un servidor llamado "book-lookup" |
 | `@mcp.tool()` | Registra una función como una herramienta que Copilot puede invocar |
@@ -118,7 +118,7 @@ if __name__ == "__main__":
 
 > 💡 **¿Por qué los decoradores?** El decorador `@mcp.tool()` es todo lo que necesitas. El SDK de MCP lee automáticamente el nombre de tu función, las anotaciones de tipo y el docstring para generar el esquema de la herramienta. ¡No se necesita un esquema JSON manual!
 
-## Configuration
+## Configuración
 
 Añade a tu `~/.copilot/mcp-config.json`:
 
@@ -135,7 +135,7 @@ Añade a tu `~/.copilot/mcp-config.json`:
 }
 ```
 
-## Usage
+## Uso
 
 ```bash
 copilot
@@ -163,10 +163,10 @@ copilot
 
 > List all available books
 
-[Shows all books in the database with ISBNs]
+[Muestra todos los libros de la base de datos con sus ISBN]
 ```
 
-## Next Steps
+## Próximos pasos
 
 Una vez que hayas construido un servidor básico, puedes:
 
@@ -175,7 +175,7 @@ Una vez que hayas construido un servidor básico, puedes:
 3. **Agregar autenticación** - Maneja claves de API y tokens de forma segura
 4. **Compartir tu servidor** - Publícalo en PyPI para que otros puedan instalarlo con `pip`
 
-## Resources
+## Recursos
 
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)

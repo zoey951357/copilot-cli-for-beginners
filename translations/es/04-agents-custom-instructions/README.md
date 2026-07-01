@@ -37,9 +37,9 @@ Cuando necesitas ayuda con tu casa, no llamas a un "ayudante general". Llamas a 
 
 | Problema | Especialista | Por qué |
 |---------|------------|-----|
-| Leaky pipe | Plumber | Knows plumbing codes, has specialized tools |
-| Rewiring | Electrician | Understands safety requirements, up to code |
-| New roof | Roofer | Knows materials, local weather considerations |
+| Tubería con fuga | Fontanero | Conoce las normativas de fontanería, dispone de herramientas especializadas |
+| Instalación eléctrica | Electricista | Entiende los requisitos de seguridad, cumple la normativa |
+| Tejado nuevo | Techador | Conoce los materiales y las condiciones climáticas locales |
 
 Los agentes funcionan de la misma manera. En lugar de una IA genérica, usa agentes que se enfocan en tareas específicas y conocen el proceso correcto a seguir. Configura las instrucciones una vez, luego reutilízalas siempre que necesites esa especialidad: revisión de código, pruebas, seguridad, documentación.
 
@@ -70,7 +70,7 @@ Comienza con agentes integrados y personalizados de inmediato.
 ## Agentes integrados
 
 **¡Ya has usado algunos agentes integrados en el Capítulo 03: Flujo de trabajo de desarrollo!**
-<br>`/plan` and `/review` are actually built-in agents. Now you know what's happening under the hood. Here's the full list:
+<br>`/plan` y `/review` son en realidad agentes integrados. Ahora ya sabes qué ocurre internamente. Esta es la lista completa:
 
 | Agente | Cómo invocarlo | Qué hace |
 |-------|---------------|--------------|
@@ -82,7 +82,7 @@ Comienza con agentes integrados y personalizados de inmediato.
 
 <br>
 
-**Built-in agents in action** - Examples of invoking Plan, Code-review, Explore, and Task
+**Agentes integrados en acción** - Ejemplos de invocación de Plan, Code-review, Explore y Task
 
 ```bash
 copilot
@@ -103,8 +103,8 @@ copilot
 
 | Resultado | Lo que ves |
 |---------|--------------|
-| ✅ **Success** | Resumen breve (p. ej., "All 247 tests passed", "Build succeeded") |
-| ❌ **Failure** | Salida completa con stack traces, errores del compilador y registros detallados |
+| ✅ **Éxito** | Resumen breve (p. ej., "All 247 tests passed", "Build succeeded") |
+| ❌ **Fallo** | Salida completa con stack traces, errores del compilador y registros detallados |
 
 
 > 📚 **Documentación oficial**: [GitHub Copilot CLI Agents](https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
@@ -150,7 +150,7 @@ When reviewing code, always check for:
 | `.github/agents/` | Específico del proyecto | Agentes compartidos por el equipo con convenciones del proyecto |
 | `~/.copilot/agents/` | Global (todos los proyectos) | Agentes personales que usas en todos tus proyectos |
 
-**This project includes sample agent files in the [.github/agents/](../../../.github/agents) folder**. Puedes escribir los tuyos, o personalizar los ya provistos.
+**Este proyecto incluye archivos de agente de ejemplo en la carpeta [.github/agents/](../../../.github/agents)**. Puedes escribir los tuyos, o personalizar los ya provistos.
 
 <details>
 <summary>📂 Ver los agentes de ejemplo en este curso</summary>
@@ -428,7 +428,7 @@ Copilot escaneará tu proyecto y creará archivos de instrucciones adaptados. Pu
 
 ### Formatos de archivos de instrucciones
 
-| File | Scope | Notes |
+| Archivo | Ámbito | Notas |
 |------|-------|-------|
 | `AGENTS.md` | Project root or nested | **Estándar multiplataforma** - funciona con Copilot y otras herramientas de IA |
 | `.github/copilot-instructions.md` | Project | Específico de GitHub Copilot |
@@ -475,12 +475,12 @@ Con `applyTo: "**/*.py"`, Copilot solo carga ese archivo de instrucciones cuando
 
 Aquí hay algunos patrones comunes:
 
-| `applyTo` value | When it applies |
+| Valor de `applyTo` | Cuándo se aplica |
 |---|---|
 | `"**/*.py"` | Cualquier archivo Python |
 | `"**/*.{ts,tsx}"` | Archivos TypeScript y TSX |
 | `"tests/**"` | Cualquier archivo dentro de una carpeta `tests/` |
-| (no frontmatter) | Cada conversación — el valor por defecto |
+| (sin frontmatter) | Cada conversación — el valor por defecto |
 
 > 💡 **Consejo**: Encierra el patrón glob entre comillas (p. ej., `"**/*.py"`) para asegurarte de que se interprete correctamente en todos los sistemas operativos y shells.
 
@@ -540,7 +540,7 @@ You are a Python specialist focused on code quality and best practices.
 
 ### Propiedades YAML
 
-| Property | Required | Description |
+| Propiedad | Requerido | Descripción |
 |----------|----------|-------------|
 | `name` | No | Nombre para mostrar (por defecto el nombre de archivo) |
 | `description` | **Sí** | Qué hace el agente - ayuda a Copilot a entender cuándo sugerirlo |

@@ -174,7 +174,7 @@ Los servidores MCP pueden configurarse a nivel de usuario en `~/.copilot/mcp-con
 <details>
 <summary>💡 <strong>¿Nuevo en JSON?</strong> Haz clic aquí para aprender qué significa cada campo</summary>
 
-| Field | What It Means |
+| Campo | Qué significa |
 |-------|---------------|
 | `"mcpServers"` | Contenedor para todas tus configuraciones de servidores MCP |
 | `"server-name"` | Un nombre que eliges (por ejemplo, "github", "filesystem") |
@@ -415,7 +415,7 @@ copilot
 
 </details>
 
-| Feature | Example |
+| Función | Ejemplo |
 |---------|----------|
 | **Información del repositorio** | Ver commits, ramas y colaboradores |
 | **Incidencias (Issues)** | Listar, crear, buscar y comentar incidencias |

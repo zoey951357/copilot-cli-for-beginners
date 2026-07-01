@@ -8,7 +8,7 @@ Referencia rápida para términos técnicos usados a lo largo de este curso. No 
 
 ### Agente
 
-Una personalidad de IA especializada con experiencia en un dominio (p. ej., frontend, seguridad). Definida en `.agent.md` files with YAML frontmatter containing at minimum a `description` field.
+Una personalidad de IA especializada con experiencia en un dominio (p. ej., frontend, seguridad). Definida en archivos `.agent.md` con frontmatter YAML que contienen al menos un campo `description`.
 
 ### API
 
@@ -134,7 +134,7 @@ Una conversación con Copilot que mantiene contexto y puede reanudarse más tard
 
 ### Skill
 
-Una carpeta con instrucciones que Copilot carga automáticamente cuando son relevantes para tu solicitud. Definidas en `SKILL.md` files with YAML frontmatter.
+Una carpeta con instrucciones que Copilot carga automáticamente cuando son relevantes para tu solicitud. Definidas en archivos `SKILL.md` con frontmatter YAML.
 
 ### Slash Command
 
@@ -146,7 +146,7 @@ Comandos que comienzan con `/` que controlan Copilot (p. ej., `/help`, `/clear`,
 
 ### Token
 
-Una unidad de texto que los modelos de IA procesan. Roughly 4 caracteres or 0.75 words. Used to measure both input (your prompts and context) and output (AI responses).
+Una unidad de texto que los modelos de IA procesan. Aproximadamente 4 caracteres o 0,75 palabras. Se usa para medir tanto la entrada (tus prompts y contexto) como la salida (respuestas de la IA).
 
 ### Type Hints
 

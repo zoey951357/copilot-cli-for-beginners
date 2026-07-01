@@ -150,11 +150,11 @@ Las habilidades son solo una pieza del modelo de extensibilidad de GitHub Copilo
 
 <img src="../../../05-skills/assets/skills-agents-mcp-comparison.png" alt="Diagrama comparativo que muestra las diferencias entre Agentes, Habilidades y Servidores MCP y cómo se combinan en tu flujo de trabajo" width="800"/>
 
-| Feature | What It Does | When to Use |
+| Característica | Qué hace | Cuándo usarla |
 |---------|--------------|-------------|
-| **Agents** | Changes how AI thinks | Need specialized expertise across many tasks |
-| **Skills** | Provides task-specific instructions | Specific, repeatable tasks with detailed steps |
-| **MCP** | Connects external services | Need live data from APIs |
+| **Agents** | Cambia cómo piensa la IA | Necesitas experiencia especializada en muchas tareas |
+| **Skills** | Proporciona instrucciones específicas de tarea | Tareas específicas y repetibles con pasos detallados |
+| **MCP** | Conecta servicios externos | Necesitas datos en vivo de APIs |
 
 Usa agentes para experiencia amplia, habilidades para instrucciones específicas de tareas y MCP para datos externos. Un agente puede usar una o más habilidades durante una conversación. Por ejemplo, cuando le pides a un agente que revise tu código, podría aplicar automáticamente tanto una habilidad `security-audit` como una `code-checklist`.
 
@@ -300,10 +300,10 @@ Las habilidades se almacenan en `.github/skills/` (específico del proyecto) o e
 
 Copilot escanea automáticamente estas ubicaciones en busca de habilidades:
 
-| Location | Scope |
+| Ubicación | Ámbito |
 |----------|-------|
-| `.github/skills/` | Project-specific (shared with team via git) |
-| `~/.copilot/skills/` | User-specific (your personal skills) |
+| `.github/skills/` | Específico del proyecto (compartido con el equipo via git) |
+| `~/.copilot/skills/` | Específico del usuario (tus habilidades personales) |
 
 ### Estructura de la habilidad
 
@@ -364,10 +364,10 @@ Provide issues as a numbered list with severity:
 
 **Propiedades YAML:**
 
-| Property | Required | Description |
+| Propiedad | Requerido | Descripción |
 |----------|----------|-------------|
-| `name` | **Yes** | Identificador único (minúsculas, guiones para espacios) |
-| `description` | **Yes** | Qué hace la habilidad y cuándo Copilot debería usarla |
+| `name` | **Sí** | Identificador único (minúsculas, guiones para espacios) |
+| `description` | **Sí** | Qué hace la habilidad y cuándo Copilot debería usarla |
 | `license` | No | Licencia que se aplica a esta habilidad |
 | `argument-hint` | No | Pista corta que se muestra a los usuarios describiendo qué argumento espera la habilidad (p. ej., `"file path or code snippet"`) |
 
@@ -514,7 +514,7 @@ copilot skill remove security-audit
 
 Una vez que estés en una sesión interactiva de Copilot, usa `/skills` (o su atajo `/skill`) para gestionar habilidades sin salir:
 
-| Command | What It Does |
+| Comando | Qué hace |
 |---------|--------------|
 | `/skills list` | Mostrar todas las habilidades instaladas |
 | `/skills info <name>` | Obtener detalles sobre una habilidad específica |
