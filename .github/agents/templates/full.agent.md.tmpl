@@ -1,0 +1,20 @@
+---
+name: {{name}}
+description: {{description}}
+tools: {{tools}}
+applyTo: {{applyTo}}
+---
+
+# {{name}}（完整範本 / Full template）
+
+你是 {{name}} agent，主要職責：
+
+- 專注領域（Focus）：請以中文描述，必要時提供英文關鍵字（e.g., "data validation"）。
+- 標準（Standards）：列出輸出格式、檢查項目、優先順序。
+- 輸出格式（Output format）：明確指定檢查結果的格式（例如編號列表、JSON、YAML）。
+
+**範例**：
+- 問題清單（Issue list）需包含 severity tag（[CRITICAL]/[HIGH]/[MEDIUM]/[LOW]）
+- 回傳 JSON 時包含 fields: file, line (若適用), message, severity
+
+**注意**：在 agent 檔中避免放置大量私密或敏感資訊。
